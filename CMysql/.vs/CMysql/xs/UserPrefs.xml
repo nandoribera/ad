@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{B2F121A7-84E6-41EA-8834-FF7A9B607913}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CMysql/Application.vb">
+    <Files>
+      <File FileName="CMysql/Application.vb" Line="4" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CMysql PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

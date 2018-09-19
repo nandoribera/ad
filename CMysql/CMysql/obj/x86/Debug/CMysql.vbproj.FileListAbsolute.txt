@@ -1,0 +1,2 @@
+/home/ferviu/Projects/CMysql/CMysql/obj/x86/Debug/CMysql.vbprojResolveAssemblyReference.cache
+/home/ferviu/Projects/CMysql/CMysql/obj/x86/Debug/CMysql.vbproj.CoreCompileInputs.cache

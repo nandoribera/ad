@@ -1,0 +1,6 @@
+/home/ferviu/Projects/CCategoria/CCategoria/bin/Debug/CCategoria.exe
+/home/ferviu/Projects/CCategoria/CCategoria/bin/Debug/CCategoria.pdb
+/home/ferviu/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.csprojResolveAssemblyReference.cache
+/home/ferviu/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.csproj.CoreCompileInputs.cache
+/home/ferviu/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.exe
+/home/ferviu/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.pdb
