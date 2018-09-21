@@ -4,3 +4,6 @@
 /home/ferviu/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.csproj.CoreCompileInputs.cache
 /home/ferviu/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.exe
 /home/ferviu/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.pdb
+/home/ferviu/Projects/CCategoria/CCategoria/bin/Debug/MySql.Data.dll
+/home/ferviu/Projects/CCategoria/CCategoria/bin/Debug/Google.Protobuf.dll
+/home/ferviu/Projects/CCategoria/CCategoria/bin/Debug/MySql.Data.xml

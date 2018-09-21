@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{ACC1C90B-52F3-4ECC-A314-E4AAB24D859D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CCategoria/MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CCategoria/Properties/Categoria.cs">
     <Files>
       <File FileName="CCategoria/Program.cs" Line="1" Column="1" />
-      <File FileName="CCategoria/MainWindow.cs" Line="10" Column="3" />
+      <File FileName="CCategoria/MainWindow.cs" Line="11" Column="17" />
+      <File FileName="CCategoria/Properties/Categoria.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CCategoria" expanded="True">
             <Node name="CCategoria" expanded="True">
-              <Node name="References" expanded="True">
-                <Node name="MySql.Data" selected="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="Categoria.cs" selected="True" />
               </Node>
             </Node>
           </Node>
