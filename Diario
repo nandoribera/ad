@@ -40,3 +40,19 @@ git config --global push.default simple
 Creado un treeView en c
 Nueva solucion .net GTK# 2.0
 Ahora crear un codigo que permita cargar los datos de la base de datos
+
+20180926
+Crear un objeto para la conexión de la BBDD(Proyecto CCategoria).
+Uso del patrón Singleton.
+https://es.wikipedia.org/wiki/Singleton
+Crear metodo de botón.
+
+
+20180928
+Explicación sobre ramas locales.
+https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+Crear instancia para conexión(Proyecto CCategoria -> App)
+Crear metodo manualmente(delegate) para el clickButton
+Creado metodo DbCommandHelper para pasar parámetros a las consultas
+
+
