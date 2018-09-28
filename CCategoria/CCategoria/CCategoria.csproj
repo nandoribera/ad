@@ -70,6 +70,7 @@
     <Compile Include="CategoriaWindow.cs" />
     <Compile Include="gtk-gui\CCategoria.CategoriaWindow.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="dBCommandHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

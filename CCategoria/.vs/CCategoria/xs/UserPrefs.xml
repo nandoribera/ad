@@ -3,7 +3,8 @@
     <Files>
       <File FileName="CCategoria/Categoria.cs" Line="4" Column="3" />
       <File FileName="CCategoria/MainWindow.cs" Line="89" Column="19" />
-      <File FileName="CCategoria/CategoriaWindow.cs" Line="30" Column="1" />
+      <File FileName="CCategoria/CategoriaWindow.cs" Line="15" Column="5" />
+      <File FileName="CCategoria/dBCommandHelper.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,9 +21,7 @@
   <MonoDevelop.Ide.ItemProperties.CCategoria PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/home/ferviu/Projects/CCategoria/CCategoria/CategoriaWindow.cs" relfile="CCategoria/CategoriaWindow.cs" line="15" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
