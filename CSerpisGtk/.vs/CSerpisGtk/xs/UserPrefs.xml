@@ -1,7 +1,7 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="../CCategoria/CCategoria/MainWindow.cs">
     <Files>
-      <File FileName="../CSerpisGtk/CSerpisGtk/TreeViewHelper.cs" Line="6" Column="9" />
+      <File FileName="CSerpisGtk/TreeViewHelper.cs" Line="6" Column="9" />
       <File FileName="../CCategoria/CCategoria/MainWindow.cs" Line="33" Column="34" />
       <File FileName="../CCategoria/CCategoria/CategoriaDao.cs" Line="27" Column="2" />
     </Files>

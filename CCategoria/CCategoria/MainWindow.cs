@@ -11,138 +11,109 @@ using System.Reflection;
 public partial class MainWindow : Gtk.Window
 {
 
-    public MainWindow() : base(Gtk.WindowType.Toplevel)
-    {
-        Build();
+	public MainWindow() : base(Gtk.WindowType.Toplevel)
+	{
+		Build();
 
 		new CategoriaWindow();
-        
- //     //CREACION DE OBJETO
-		//object obj = null;
-		//object result = obj + "";
 
-		//Console.WriteLine(result);
-		//Console.WriteLine("ctor fin");
-
-        //CONEXION BBDD
+		//CONEXION BBDD
 		App.Instance.DbConnection = new MySqlConnection(
-                "server=localhost;database=dbprueba;user=root;password=sistemas;ssl-mode=none"
-            );
+				"server=localhost;database=dbprueba;user=root;password=sistemas;ssl-mode=none"
+			);
 
 		App.Instance.DbConnection.Open();
 
-		//dbConnection = new MySqlConnection(
-  //              "server=localhost;database=dbprueba;user=root;password=sistemas;ssl-mode=none"
-  //          );
-		//dbConnection.Open();
-        
 		//insert();
-		update(new Categoria(3, "categoria 3 " + DateTime.Now));
+		//update(new Categoria(3, "categoria 3 " + DateTime.Now));
 		//delete();
 
-		//AGREGAR COLUMNAS Y DATOS AL treeView
-		CellRendererText cellRendererText = new CellRendererText();
-		treeView.AppendColumn(
-			"Id",
-			cellRendererText,
-			delegate (TreeViewColumn tree_column, CellRenderer cell, TreeModel tree_model, TreeIter iter){
-				//Categoria categoria = (Categoria)tree_model.GetValue(iter, 0);
-				//cellRendererText.Text = categoria.Id.ToString();
-			    object model = tree_model.GetValue(iter, 0);
-				object value = model.GetType().GetProperty("Id").GetValue(model);
-			    cellRendererText.Text = value.ToString();
-		    }
-		);
+		TreeViewHelper.Fill(treeView, new string[] { "Id", "Nombre" }, CategoriaDao.Categorias);
 
-		treeView.AppendColumn(
-            "Nombre",
-            cellRendererText,
-            delegate (TreeViewColumn tree_column, CellRenderer cell, TreeModel tree_model, TreeIter iter) {
-			    //Categoria categoria = (Categoria)tree_model.GetValue(iter, 0);
-			    //cellRendererText.Text = categoria.Nombre;
-			object model = tree_model.GetValue(iter, 0);
-                object value = model.GetType().GetProperty("Nombre").GetValue(model);
-                cellRendererText.Text = value.ToString();
+		newAction.Activated += delegate
+		{
+			treeView.Selection.GetSelected(out TreeIter treeIter);
 
-            }
-        );
 
-		string[] properties = new string[] { "id", "Nombre" };
 
-		foreach (string property in properties){
-			string propertyName = property;
-		}
+			Categoria categoria = (Categoria)treeView.Model.GetValue(treeIter, 0);
+			Console.WriteLine("Categoria Id = " + categoria.Id);
+		};
 
-        //MODELO Y TIPO DE DATOS DEL treeView
-		ListStore listStore = new ListStore(typeof(Categoria));
-		treeView.Model = listStore;
-        
-        //INSERTAR VALORES A listStore
-		//listStore.AppendValues("1","cat1");
-		//listStore.AppendValues("2","cat2");
+		treeView.Selection.Changed += delegate
+		{
+			refreshUI();
 
-        //COMANDO PARA INSERTAR DATOS DE BBDD Al treeView
-		IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();
-		dbCommand.CommandText = "select id, nombre from categoria order by id";
-		IDataReader dataReader = dbCommand.ExecuteReader();
-		while (dataReader.Read())
-			listStore.AppendValues(new Categoria((ulong)dataReader["id"], (string)dataReader["nombre"]));
-		dataReader.Close();
-        
+		};
 
-    }
+		refreshUI();
+
+	}
+
+	public static object GetId(TreeView treeView)
+	{
+		return Get(treeView, "Id");
+	}
+
+	public static object Get(TreeView treeview, string propertyName)
+	{
+		if (treeview.Selection.GetSelected(out TreeIter treeIter))
+			return null;
+		object model = treeview.Model.GetValue(treeIter, 0);
+		return model.GetType().GetProperty(propertyName).GetValue(model);
+	}
+
+	private void refreshUI()
+	{
+		bool treeViewIsSelected = treeView.Selection.CountSelectedRows() > 0;
+		editAction.Sensitive = treeViewIsSelected;
+		deleteAction.Sensitive = treeViewIsSelected;
+
+	}
 
 	private void insert()
-    {
+	{
 		//COMANDO PARA INSERTAR DATOS EN BBDD
-        
-        
+
+
 		IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();
 		dbCommand.CommandText = "insert into categoria (nombre) values('Categoria 4')";
 		dbCommand.ExecuteNonQuery();
-    }
+	}
 
 	private void update(Categoria categoria)
-    {
-        //COMANDO PARA ACTUALIZAR DATOS EN BBDD
+	{
+		//COMANDO PARA ACTUALIZAR DATOS EN BBDD
 
 
-        IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();
+		IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();
 		dbCommand.CommandText = "update categoria set nombre=@nombre where id=@id";
 
 		//INTRODUCIR PARAMETROS EN CONSULTAS
 		dBCommandHelper.AddParemeter(dbCommand, "nombre", categoria.Nombre);
-		//IDbDataParameter dbDataParameterNombre = dbCommand.CreateParameter();
-		//dbDataParameterNombre.ParameterName = "nombre";
-		//dbDataParameterNombre.Value = categoria.Nombre;
-		//dbCommand.Parameters.Add(dbDataParameterNombre);
 
 
 		dBCommandHelper.AddParemeter(dbCommand, "id", categoria.Id);
-        
-        //IDbDataParameter dbDataParameterId = dbCommand.CreateParameter();
-		//dbDataParameterId.ParameterName = "id";
-		//dbDataParameterId.Value = categoria.Id;
-		//dbCommand.Parameters.Add(dbDataParameterId);
-        
-        dbCommand.ExecuteNonQuery();
-    }
+
+
+		dbCommand.ExecuteNonQuery();
+	}
 
 	private void delete()
-    {
-        //COMANDO PARA BORRAR DATOS EN BBDD
+	{
+		//COMANDO PARA BORRAR DATOS EN BBDD
 
 
-        IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();
-        dbCommand.CommandText = "delete from categoria where id=4";
-        dbCommand.ExecuteNonQuery();
-    }
-    
+		IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();
+		dbCommand.CommandText = "delete from categoria where id=4";
+		dbCommand.ExecuteNonQuery();
+	}
 
-    protected void OnDeleteEvent(object sender, DeleteEventArgs a)
-    {
+
+	protected void OnDeleteEvent(object sender, DeleteEventArgs a)
+	{
 		App.Instance.DbConnection.Close();
-        Application.Quit();
-        a.RetVal = true;
-    }
+		Application.Quit();
+		a.RetVal = true;
+	}
 }

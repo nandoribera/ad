@@ -56,7 +56,10 @@
       <HintPath>..\..\..\Descargas\mysql-connector-net-8.0.12-noinstall\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="CSerpis">
-      <HintPath>..\..\..\ad\CSerpis\CSerpis\bin\Debug\CSerpis.dll</HintPath>
+      <HintPath>..\..\CSerpis\CSerpis\bin\Debug\CSerpis.dll</HintPath>
+    </Reference>
+    <Reference Include="CSerpisGtk">
+      <HintPath>..\..\CSerpisGtk\CSerpisGtk\bin\Debug\CSerpisGtk.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +75,7 @@
     <Compile Include="Categoria.cs" />
     <Compile Include="CategoriaWindow.cs" />
     <Compile Include="gtk-gui\CCategoria.CategoriaWindow.cs" />
+    <Compile Include="CategoriaDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
