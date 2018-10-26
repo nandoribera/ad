@@ -11,6 +11,8 @@ public partial class MainWindow
 
 	private global::Gtk.Action deleteAction;
 
+	private global::Gtk.Action refreshAction;
+
 	private global::Gtk.VBox vbox1;
 
 	private global::Gtk.Toolbar toolbar1;
@@ -31,6 +33,8 @@ public partial class MainWindow
 		w1.Add(this.editAction, null);
 		this.deleteAction = new global::Gtk.Action("deleteAction", null, null, "gtk-delete");
 		w1.Add(this.deleteAction, null);
+		this.refreshAction = new global::Gtk.Action("refreshAction", null, null, "gtk-refresh");
+		w1.Add(this.refreshAction, null);
 		this.UIManager.InsertActionGroup(w1, 0);
 		this.AddAccelGroup(this.UIManager.AccelGroup);
 		this.Name = "MainWindow";
@@ -43,7 +47,8 @@ public partial class MainWindow
 		// Container child vbox1.Gtk.Box+BoxChild
 		this.UIManager.AddUiFromString("<ui><toolbar name=\'toolbar1\'><toolitem name=\'newAction\' action=\'newAction\'/><tool" +
 				"item name=\'editAction\' action=\'editAction\'/><toolitem name=\'deleteAction\' action" +
-				"=\'deleteAction\'/></toolbar></ui>");
+				"=\'deleteAction\'/><toolitem name=\'refreshAction\' action=\'refreshAction\'/></toolba" +
+				"r></ui>");
 		this.toolbar1 = ((global::Gtk.Toolbar)(this.UIManager.GetWidget("/toolbar1")));
 		this.toolbar1.Name = "toolbar1";
 		this.toolbar1.ShowArrow = false;
@@ -72,5 +77,6 @@ public partial class MainWindow
 		this.DefaultWidth = 400;
 		this.DefaultHeight = 300;
 		this.Show();
+		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 	}
 }

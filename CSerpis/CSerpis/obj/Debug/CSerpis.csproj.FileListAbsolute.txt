@@ -1,6 +1,0 @@
-/home/ferviu/ad/CSerpis/CSerpis/bin/Debug/CSerpis.dll
-/home/ferviu/ad/CSerpis/CSerpis/bin/Debug/CSerpis.pdb
-/home/ferviu/ad/CSerpis/CSerpis/obj/Debug/CSerpis.csprojResolveAssemblyReference.cache
-/home/ferviu/ad/CSerpis/CSerpis/obj/Debug/CSerpis.csproj.CoreCompileInputs.cache
-/home/ferviu/ad/CSerpis/CSerpis/obj/Debug/CSerpis.dll
-/home/ferviu/ad/CSerpis/CSerpis/obj/Debug/CSerpis.pdb

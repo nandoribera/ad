@@ -4,8 +4,12 @@
     <images-root-path>..</images-root-path>
   </configuration>
   <import>
-    <widget-library name="../bin/Debug/CCategoria.exe" internal="true" />
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../../../CSerpisGtk/CSerpisGtk/bin/Debug/CSerpisGtk.dll" />
+    <widget-library name="../../../CSerpisGtk/CSerpisGtk/bin/Debug/CSerpisGtk.dll" />
+    <widget-library name="../../../CSerpisGtk/CSerpisGtk/bin/Debug/CSerpisGtk.dll" />
+    <widget-library name="../../../CSerpisGtk/CSerpisGtk/bin/Debug/CSerpisGtk.dll" />
+    <widget-library name="../bin/Debug/CCategoria.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="400 300">
     <action-group name="Default">
@@ -24,10 +28,16 @@
         <property name="Label" translatable="yes" />
         <property name="StockId">gtk-delete</property>
       </action>
+      <action id="refreshAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+        <property name="StockId">gtk-refresh</property>
+      </action>
     </action-group>
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
       <widget class="Gtk.VBox" id="vbox1">
         <property name="MemberName" />
@@ -40,6 +50,7 @@
               <node type="Toolitem" action="newAction" />
               <node type="Toolitem" action="editAction" />
               <node type="Toolitem" action="deleteAction" />
+              <node type="Toolitem" action="refreshAction" />
             </node>
           </widget>
           <packing>
@@ -72,7 +83,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="CCategoria.CategoriaWindow" design-size="426 72">
+  <widget class="Gtk.Window" id="CCategoria.CategoriaWindow" design-size="358 62">
     <action-group name="Default">
       <action id="saveAction">
         <property name="Type">Action</property>
@@ -84,11 +95,11 @@
     <property name="Title" translatable="yes">CategoriaWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
     <child>
-      <widget class="Gtk.VBox" id="vbox6">
+      <widget class="Gtk.VBox" id="vbox4">
         <property name="MemberName" />
         <property name="Spacing">6</property>
         <child>
-          <widget class="Gtk.Table" id="table1">
+          <widget class="Gtk.Table" id="table3">
             <property name="MemberName" />
             <property name="NColumns">2</property>
             <property name="RowSpacing">6</property>
@@ -114,7 +125,7 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Label" id="label">
+              <widget class="Gtk.Label" id="label2">
                 <property name="MemberName" />
                 <property name="LabelProp" translatable="yes">Nombre</property>
               </widget>
@@ -139,7 +150,7 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.HButtonBox" id="hbuttonbox10">
+          <widget class="Gtk.HButtonBox" id="hbuttonbox5">
             <property name="MemberName" />
             <property name="Size">1</property>
             <property name="LayoutStyle">End</property>
