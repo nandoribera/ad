@@ -1,0 +1,7 @@
+/home/ferviu/ad/CVentas/CVentas/bin/Debug/CVentas.dll
+/home/ferviu/ad/CVentas/CVentas/bin/Debug/CVentas.pdb
+/home/ferviu/ad/CVentas/CVentas/bin/Debug/CSerpis.dll
+/home/ferviu/ad/CVentas/CVentas/obj/Debug/CVentas.csprojResolveAssemblyReference.cache
+/home/ferviu/ad/CVentas/CVentas/obj/Debug/CVentas.csproj.CoreCompileInputs.cache
+/home/ferviu/ad/CVentas/CVentas/obj/Debug/CVentas.dll
+/home/ferviu/ad/CVentas/CVentas/obj/Debug/CVentas.pdb

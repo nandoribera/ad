@@ -1,0 +1,12 @@
+/home/ferviu/ad/CCategoria/CCategoria/obj/x86/Debug/CCategoria.csprojResolveAssemblyReference.cache
+/home/ferviu/ad/CCategoria/CCategoria/obj/x86/Debug/CCategoria.csproj.CoreCompileInputs.cache
+/home/ferviu/ad/CCategoria/CCategoria/bin/Debug/CCategoria.exe
+/home/ferviu/ad/CCategoria/CCategoria/bin/Debug/CCategoria.pdb
+/home/ferviu/ad/CCategoria/CCategoria/bin/Debug/CSerpis.dll
+/home/ferviu/ad/CCategoria/CCategoria/bin/Debug/CSerpisGtk.dll
+/home/ferviu/ad/CCategoria/CCategoria/bin/Debug/CVentas.dll
+/home/ferviu/ad/CCategoria/CCategoria/bin/Debug/MySql.Data.dll
+/home/ferviu/ad/CCategoria/CCategoria/bin/Debug/CSerpisGtk.pdb
+/home/ferviu/ad/CCategoria/CCategoria/bin/Debug/CVentas.pdb
+/home/ferviu/ad/CCategoria/CCategoria/obj/x86/Debug/CCategoria.exe
+/home/ferviu/ad/CCategoria/CCategoria/obj/x86/Debug/CCategoria.pdb

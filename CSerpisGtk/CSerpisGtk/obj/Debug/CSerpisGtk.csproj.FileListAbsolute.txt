@@ -1,0 +1,6 @@
+/home/ferviu/ad/CSerpisGtk/CSerpisGtk/bin/Debug/CSerpisGtk.dll
+/home/ferviu/ad/CSerpisGtk/CSerpisGtk/bin/Debug/CSerpisGtk.pdb
+/home/ferviu/ad/CSerpisGtk/CSerpisGtk/obj/Debug/CSerpisGtk.csprojResolveAssemblyReference.cache
+/home/ferviu/ad/CSerpisGtk/CSerpisGtk/obj/Debug/CSerpisGtk.csproj.CoreCompileInputs.cache
+/home/ferviu/ad/CSerpisGtk/CSerpisGtk/obj/Debug/CSerpisGtk.dll
+/home/ferviu/ad/CSerpisGtk/CSerpisGtk/obj/Debug/CSerpisGtk.pdb
