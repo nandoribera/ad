@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{43A77561-2502-4662-B7C4-1B9B8B7C5DF2}|Default">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="../CArticulo/CArticulo/MainWindow.cs">
     <Files>
       <File FileName="../CArticulo/CArticulo/MainWindow.cs" Line="17" Column="22" />
@@ -11,7 +11,6 @@
       <File FileName="../CVentas/CVentas/EntityDao.cs" Line="72" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CCategoria PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

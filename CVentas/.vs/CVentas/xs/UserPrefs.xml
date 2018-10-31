@@ -1,12 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="../CCategoria/CCategoria/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../CArticulo/CArticulo/MainWindow.cs">
     <Files>
-      <File FileName="CVentas/EntityDao.cs" Line="10" Column="33" />
-      <File FileName="../CCategoria/CCategoria/MainWindow.cs" Line="4" Column="18" />
-      <File FileName="../CCategoria/CCategoria/Program.cs" Line="2" Column="11" />
+      <File FileName="../CArticulo/CArticulo/MainWindow.cs" Line="20" Column="3" />
+      <File FileName="../CArticulo/CArticulo/Program.cs" Line="5" Column="1" />
+      <File FileName="../CArticulo/CArticulo/ArticuloWindow.cs" Line="1" Column="1" />
+      <File FileName="../CArticulo/CArticulo/Articulo.cs" Line="20" Column="10" />
+      <File FileName="CVentas/Categoria.cs" Line="21" Column="3" />
+      <File FileName="../EntityDao/EntityDao/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="../EntityDao/EntityDao/Program.cs" Line="1" Column="1" />
+      <File FileName="CVentas/EntityDao.cs" Line="72" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

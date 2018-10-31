@@ -7,12 +7,19 @@ using Serpis.Ad.Ventas;
 
 public partial class MainWindow : Gtk.Window
 {
+	public class EntityDaoCategoria: EntityDao<Categoria>{}
+
 	public MainWindow() : base(Gtk.WindowType.Toplevel) {
 		Build();
 
 		Title = "Categoría";
 
+		EntityDaoCategoria entityDaoCategoria = new EntityDaoCategoria();
         TreeViewHelper.Fill(treeView, new string[] {"Id", "Nombre"}, CategoriaDao.Categorias);
+
+		object defaultUlong = Activator.CreateInstance(typeof(ulong));
+
+		Console.WriteLine("defaultUlong " + defaultUlong);
 
 		newAction.Activated += delegate {
 			new CategoriaWindow(new Categoria());		

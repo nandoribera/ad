@@ -49,7 +49,7 @@ namespace CVentas
 
 		public TEntity Load(object id){
 			//TODO implementar
-			return null;
+			return default(TEntity);
 		}
 
 		public void Save(TEntity entity) {
@@ -66,7 +66,7 @@ namespace CVentas
         
 		public TEntity Delete(object id) {
 			//TODO implementar
-			return null;
+			return default(TEntity);
 
         }
 

@@ -1,0 +1,10 @@
+/home/ferviu/ad/CArticulo/CArticulo/obj/x86/Debug/CArticulo.csprojResolveAssemblyReference.cache
+/home/ferviu/ad/CArticulo/CArticulo/obj/x86/Debug/CArticulo.csproj.CoreCompileInputs.cache
+/home/ferviu/ad/CArticulo/CArticulo/bin/Debug/CArticulo.exe
+/home/ferviu/ad/CArticulo/CArticulo/bin/Debug/CArticulo.pdb
+/home/ferviu/ad/CArticulo/CArticulo/bin/Debug/CSerpis.dll
+/home/ferviu/ad/CArticulo/CArticulo/bin/Debug/CVentas.dll
+/home/ferviu/ad/CArticulo/CArticulo/bin/Debug/MySql.Data.dll
+/home/ferviu/ad/CArticulo/CArticulo/bin/Debug/CVentas.pdb
+/home/ferviu/ad/CArticulo/CArticulo/obj/x86/Debug/CArticulo.exe
+/home/ferviu/ad/CArticulo/CArticulo/obj/x86/Debug/CArticulo.pdb
