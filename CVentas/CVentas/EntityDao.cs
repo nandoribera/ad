@@ -39,6 +39,8 @@ namespace CVentas
                         entityType.GetProperty(propertyName).SetValue(model, value);
                     }
 					list.Add(model);
+					if (value == DBNull.Value)
+						value = null;
 
                 }
                 dataReader.Close();

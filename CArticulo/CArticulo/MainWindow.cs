@@ -14,9 +14,9 @@ public partial class MainWindow : Gtk.Window
 			new{Id= 1, Nombre = "Articulo1"}
 		};
 
-		EntityDao<Articulo> articuloDao = new EntityDao<Articulo>;
+		//EntityDao<Articulo> articuloDao = new EntityDao<Articulo>;
 
-		TreeViewHelper.Fill(treeview2, new string[] { "id", "Nombre", "Precio" }, articuloDao<Articulo>);
+		//TreeViewHelper.Fill(treeview2, new string[] { "id", "Nombre", "Precio" }, articuloDao<Articulo>);
 
 
     }

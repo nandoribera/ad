@@ -8,3 +8,5 @@
 /home/ferviu/ad/CArticulo/CArticulo/bin/Debug/CVentas.pdb
 /home/ferviu/ad/CArticulo/CArticulo/obj/x86/Debug/CArticulo.exe
 /home/ferviu/ad/CArticulo/CArticulo/obj/x86/Debug/CArticulo.pdb
+/home/ferviu/ad/CArticulo/CArticulo/bin/Debug/CSerpisGtk.dll
+/home/ferviu/ad/CArticulo/CArticulo/bin/Debug/CSerpisGtk.pdb
