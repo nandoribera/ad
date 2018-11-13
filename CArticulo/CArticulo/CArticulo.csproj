@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{358B5461-F58E-4FAE-A54D-7518EBC185BD}</ProjectGuid>
+    <ProjectGuid>{3527938B-AD23-4C80-B58D-0917E2876D46}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CArticulo</RootNamespace>
     <AssemblyName>CArticulo</AssemblyName>
@@ -41,6 +41,7 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>glade-sharp-2.0</Package>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
@@ -52,24 +53,15 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Mono.Posix" />
+    <Reference Include="System.Data" />
     <Reference Include="MySql.Data">
-      <HintPath>..\..\MySql.Data.dll</HintPath>
+      <HintPath>..\..\mysql\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="CSerpis">
       <HintPath>..\..\CSerpis\CSerpis\bin\Debug\CSerpis.dll</HintPath>
     </Reference>
-    <Reference Include="CVentas">
-      <HintPath>..\..\CVentas\CVentas\bin\Debug\CVentas.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data" />
     <Reference Include="CSerpisGtk">
       <HintPath>..\..\CSerpisGtk\CSerpisGtk\bin\Debug\CSerpisGtk.dll</HintPath>
-    </Reference>
-    <Reference Include="CVentas">
-      <HintPath>..\..\CVentas\CVentas\bin\Debug\CVentas.dll</HintPath>
-    </Reference>
-    <Reference Include="CVentas">
-      <HintPath>..\..\CVentas\CVentas\bin\Debug\CVentas.dll</HintPath>
     </Reference>
     <Reference Include="CVentas">
       <HintPath>..\..\CVentas\CVentas\bin\Debug\CVentas.dll</HintPath>

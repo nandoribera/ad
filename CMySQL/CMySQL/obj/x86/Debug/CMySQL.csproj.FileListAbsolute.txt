@@ -1,7 +1,0 @@
-/home/ferviu/Projects/CMySQL/CMySQL/bin/Debug/CMySQL.exe
-/home/ferviu/Projects/CMySQL/CMySQL/bin/Debug/CMySQL.pdb
-/home/ferviu/Projects/CMySQL/CMySQL/bin/Debug/MySql.Data.dll
-/home/ferviu/Projects/CMySQL/CMySQL/obj/x86/Debug/CMySQL.csprojResolveAssemblyReference.cache
-/home/ferviu/Projects/CMySQL/CMySQL/obj/x86/Debug/CMySQL.csproj.CoreCompileInputs.cache
-/home/ferviu/Projects/CMySQL/CMySQL/obj/x86/Debug/CMySQL.exe
-/home/ferviu/Projects/CMySQL/CMySQL/obj/x86/Debug/CMySQL.pdb
