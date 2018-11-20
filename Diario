@@ -61,5 +61,11 @@ Crear base de datos para CVentas
 
 20181120
 Crear proyecto gradle GHolaMundo
+Subida GHolaMundo
+MySql connector gradle:
+// https://mvnrepository.com/artifact/mysql/mysql-connector-java
+compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.13'
+Driver Manager, Errores de conexión base de datos con gradle
+
 
 
