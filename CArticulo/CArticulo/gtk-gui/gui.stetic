@@ -4,7 +4,6 @@
     <images-root-path>..</images-root-path>
   </configuration>
   <import>
-    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../../../CSerpisGtk/CSerpisGtk/bin/Debug/CSerpisGtk.dll" />
     <widget-library name="../bin/Debug/CArticulo.exe" internal="true" />
   </import>
@@ -118,7 +117,7 @@
               </packing>
             </child>
             <child>
-              <widget class="Gtk.Entry" id="entry1">
+              <widget class="Gtk.Entry" id="entryNombre">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="IsEditable">True</property>
@@ -235,11 +234,11 @@
             <property name="Size">1</property>
             <property name="LayoutStyle">End</property>
             <child>
-              <widget class="Gtk.Button" id="button1">
+              <widget class="Gtk.Button" id="buttonSave">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Type">TextOnly</property>
-                <property name="Label" translatable="yes">GtkButton</property>
+                <property name="Label" translatable="yes">Guardar</property>
                 <property name="UseUnderline">True</property>
               </widget>
               <packing>

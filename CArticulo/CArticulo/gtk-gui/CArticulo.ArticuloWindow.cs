@@ -10,7 +10,7 @@ namespace CArticulo
 
 		private global::Gtk.ComboBox combobox1;
 
-		private global::Gtk.Entry entry1;
+		private global::Gtk.Entry entryNombre;
 
 		private global::Gtk.Label label1;
 
@@ -22,7 +22,7 @@ namespace CArticulo
 
 		private global::Gtk.HButtonBox hbuttonbox1;
 
-		private global::Gtk.Button button1;
+		private global::Gtk.Button buttonSave;
 
 		protected virtual void Build()
 		{
@@ -52,13 +52,13 @@ namespace CArticulo
 			w1.XOptions = ((global::Gtk.AttachOptions)(4));
 			w1.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.entry1 = new global::Gtk.Entry();
-			this.entry1.CanFocus = true;
-			this.entry1.Name = "entry1";
-			this.entry1.IsEditable = true;
-			this.entry1.InvisibleChar = '•';
-			this.table1.Add(this.entry1);
-			global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1[this.entry1]));
+			this.entryNombre = new global::Gtk.Entry();
+			this.entryNombre.CanFocus = true;
+			this.entryNombre.Name = "entryNombre";
+			this.entryNombre.IsEditable = true;
+			this.entryNombre.InvisibleChar = '•';
+			this.table1.Add(this.entryNombre);
+			global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1[this.entryNombre]));
 			w2.LeftAttach = ((uint)(1));
 			w2.RightAttach = ((uint)(2));
 			w2.YOptions = ((global::Gtk.AttachOptions)(4));
@@ -118,13 +118,13 @@ namespace CArticulo
 			this.hbuttonbox1.Name = "hbuttonbox1";
 			this.hbuttonbox1.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child hbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
-			this.button1 = new global::Gtk.Button();
-			this.button1.CanFocus = true;
-			this.button1.Name = "button1";
-			this.button1.UseUnderline = true;
-			this.button1.Label = global::Mono.Unix.Catalog.GetString("GtkButton");
-			this.hbuttonbox1.Add(this.button1);
-			global::Gtk.ButtonBox.ButtonBoxChild w8 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1[this.button1]));
+			this.buttonSave = new global::Gtk.Button();
+			this.buttonSave.CanFocus = true;
+			this.buttonSave.Name = "buttonSave";
+			this.buttonSave.UseUnderline = true;
+			this.buttonSave.Label = global::Mono.Unix.Catalog.GetString("Guardar");
+			this.hbuttonbox1.Add(this.buttonSave);
+			global::Gtk.ButtonBox.ButtonBoxChild w8 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1[this.buttonSave]));
 			w8.Expand = false;
 			w8.Fill = false;
 			this.vbox2.Add(this.hbuttonbox1);

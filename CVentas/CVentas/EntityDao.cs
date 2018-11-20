@@ -77,15 +77,58 @@ namespace Serpis.Ad
 				update(entity);
 		}
 
-		protected void insert(TEntity entity) {
-			//TODO implementar
+		protected string insertSql = "insert into (0) ({1}) values ({2})";
+		public void insert(TEntity entity) {
+
+			IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();
+			//insert into categoria (nombre,precio,categoria) values (@nombre, @precio, @categoria)
+
+            //FORMAS DE REALIZAR INSERT
+			//List<string> fieldsWithoutID = entityPropertyNames.GetRange(1, entityPropertyNames.Count -1);
+			//List<string> fieldsWithoutID = new List<string>(entityPropertyNames);
+			//fieldsWithoutID.RemoveAt(0);
+
+			List<string> fieldsWithoutId = new List<string>();
+			List<string> fieldParameterPairs = new List<string>();
+			for (int index = 1; index < fieldsWithoutId.Count; index++){
+				fieldsWithoutId.Add(fieldsWithoutId[index]);
+				fieldParameterPairs.Add("@" + entityPropertyNames[index].ToLower());
+			}
+
+			//List<string> fieldsWithoutID = new List<string>();
+			//foreach(string item in entityPropertyNames){
+			//	if (item != "id")
+			//		fieldsWithoutID.Add(item);
+			//}
+
+
+			//List<string> fieldsWithoutId = entityPropertyNames.FindAll(item => item != "id");
+   //         fieldsWithoutId.ForEach(item => item = "0" + item);
+			//List<string> fieldParameterPairs = entityPropertyNames.FindAll(item => item != "id");
+			//fieldParameterPairs.ForEach(item => item = "=@" + item);
+
+			string fieldNamesCsv = string.Join(", ", fieldsWithoutId).ToLower();
+			string parametersCsv = string.Join(", ", fieldParameterPairs).ToLower();
+            string tableName = entityType.Name.ToLower();
+
+			dbCommand.CommandText = string.Format(insertSql, tableName, fieldNamesCsv, parametersCsv);
+
+			foreach (string fieldname in fieldsWithoutId){
+				object value = entityType.GetProperty(fieldname).GetValue(entity);
+				DbCommandHelper.AddParameter(dbCommand, fieldname, value);
+			}
+
+			dbCommand.ExecuteNonQuery();
+
+            //IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();
+			//dbCommand.CommandText = string.Format(insertSql, tableName, fieldNamesCsv);
         }
 
 		protected void update(TEntity entity) {
 			//TODO implementar
         }
 
-		protected static string deleteSql = "delete from {0} where {1} = @id";
+		protected string deleteSql = "delete from {0} where {1} = @id";
 		public void Delete(object id) {
 			string tableName = entityType.Name.ToLower();
 			IDbCommand dbCommand = App.Instance.DbConnection.CreateCommand();

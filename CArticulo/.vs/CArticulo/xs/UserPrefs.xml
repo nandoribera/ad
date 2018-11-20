@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{3527938B-AD23-4C80-B58D-0917E2876D46}|Default">
+  <MonoDevelop.Ide.ItemProperties.CArticulo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../CCategoria/CCategoria/CategoriaWindow.cs">
+    <Files>
+      <File FileName="../CVentas/CVentas/EntityDao.cs" Line="114" Column="94" />
+      <File FileName="../CCategoria/CCategoria/MainWindow.cs" Line="27" Column="41" />
+      <File FileName="../CCategoria/CCategoria/Program.cs" Line="23" Column="31" />
+      <File FileName="../CVentas/CVentas/CategoriaDao.cs" Line="1" Column="1" />
+      <File FileName="CArticulo/MainWindow.cs" Line="26" Column="1" />
+      <File FileName="CArticulo/ArticuloWindow.cs" Line="12" Column="35" />
+      <File FileName="../CCategoria/CCategoria/CategoriaWindow.cs" Line="16" Column="34" />
+      <File FileName="CArticulo/Articulo.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

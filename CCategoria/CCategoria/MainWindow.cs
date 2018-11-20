@@ -24,7 +24,8 @@ public partial class MainWindow : Gtk.Window
 		TreeViewHelper.Fill(treeView, new string[] { "Id", "Nombre" }, entityDaoCategoria.Enumerable);
 
 		newAction.Activated += delegate {
-			new CategoriaWindow(new Categoria());		
+			new CategoriaWindow(new Categoria());
+            
 		};
 
 		editAction.Activated += delegate {

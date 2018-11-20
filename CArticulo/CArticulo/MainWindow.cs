@@ -22,13 +22,13 @@ public partial class MainWindow : Gtk.Window
 		TreeViewHelper.Fill(treeView, new string[] { "Id", "Nombre", "Precio", "Categoria"}, articuloDao.Enumerable);
 
 		newAction.Activated += delegate {
-            new ArticuloWindow(new Articulo());
+			new ArticuloWindow(new Articulo());
         };
 
 		editAction.Activated += delegate {
 			object id = TreeViewHelper.GetId(treeView);
-			Articulo articulo = articuloDao.Load(id);
-			new ArticuloWindow(articulo);
+            Articulo articulo = articuloDao.Load(id);
+            new ArticuloWindow(articulo);
 		};
 
 		deleteAction.Activated += delegate {
